@@ -1,0 +1,37 @@
+.nav-bar{
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #3498db;
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 0;
+  justify-content: space-between;
+  font-family: 'Apple Chancery',  cursive;
+}
+.app-name{
+  color: #3498db;
+}
+
+.right-nav{
+  display: flex;
+  margin-right: 40px;
+  gap: 20px;
+  margin-top: 7px;
+}
+.left-nav{
+  margin-left: 40px;
+}
+.logout-button{
+  background-color:  #3498db;
+  border:transparent;
+  width: 75px;
+  height: 30px;
+  margin-top: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.logout-button:hover{
+  background-color:  #072c46;
+  color: white;
+}

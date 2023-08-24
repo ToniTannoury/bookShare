@@ -1,0 +1,24 @@
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  /* scroll-snap-type: x mandatory; */
+  cursor: grab;
+  width:80%;
+  margin: auto;
+ 
+}
+
+.carousel::-webkit-scrollbar {
+  width: 0.5rem; 
+  height: 0.5rem; 
+}
+
+.student-image {
+  flex: 0 0 60px;
+  height: 60px;
+  width: 60px;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}

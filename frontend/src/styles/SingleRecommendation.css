@@ -1,0 +1,44 @@
+.single-recommendation{
+  height: 100px;
+  width: 700px;
+    border: 2px solid  #3498db; 
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:  #F2F7FA;
+   
+}
+.recommendation-search{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recommendation-search-input{
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.recom-search-label{
+  font-weight: 600;
+  color: #3498db;
+}
+.recomm-search-image{
+  width: 60px;
+  height: 60px;
+  background-color: #3498db;
+  border: 2px solid  ghostwhite; 
+  margin-top: 8px;
+  margin-left: 8px;
+
+}
+.add-to-likes{
+ height: 30px;
+}
+
+/* position:'absolute' , left:"25%" */
+.following-recommendations-list{
+  position: absolute;
+  left: 25%;
+}

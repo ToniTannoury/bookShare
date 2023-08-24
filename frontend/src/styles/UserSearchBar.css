@@ -1,0 +1,28 @@
+.user-seach-container{
+  margin-left: 32%;
+}
+ul {
+  list-style-type: none; 
+  padding: 3px;
+}
+
+li {
+  margin-bottom: 8px; 
+  padding: 3px; 
+}
+.user-search-input{
+  width: 50%;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.user-search-image{
+  width: 60px;
+  height: 60px;
+  background-color: #3498db;
+  border-radius: 50%;
+  border: 2px solid  ghostwhite; 
+  margin-top: 8px;
+  margin-left: 8px;
+
+}

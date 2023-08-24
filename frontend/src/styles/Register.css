@@ -1,0 +1,146 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Apple Chancery',  cursive;
+  background-color: #fafafa;
+}
+
+.register-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 16%;
+  text-align: center;
+}
+
+.register-form h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.register-form input {
+  width: 70%;
+  padding: 0.5rem;
+  margin: 0.2rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-form button {
+  width: 90%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #72b9fb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #3578e5;
+}
+
+.register-form p {
+  margin-top: 1rem;
+}
+.register-form-container{
+
+  
+}
+hr{
+  background-color: gray;
+  opacity: 0.3;
+  padding: 1px;
+  width: 100%;
+  border-radius: 5px;
+}
+.bottom-register-text{
+  width: 300px;
+  font-size: 12px;
+}
+.bottom-register{
+  width: 200px;
+}.bottom-register {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.bottom-register-text {
+  width: 85%; 
+  font-size: 12px;
+  text-align: center; 
+  margin: 5px 0; 
+}
+.text-with-lines {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+.text-with-lines.login {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-left: 60px;
+}
+
+.line {
+  width:140px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.text {
+  background-color: #fff; 
+  font-size: 13px;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .register-container {
+    min-height: 100vh; 
+  }
+
+  .register-form {
+    padding: 1rem; 
+    border-radius: 6px; 
+    max-width: 320px; 
+    width: 80%; 
+  }
+
+  .register-form h1 {
+    font-size: 20px; 
+    margin-bottom: 0.7rem; 
+  }
+
+  .register-form input {
+    width:50%; 
+    padding: 0.4rem; 
+    margin: 0.15rem 0; 
+    font-size: 12px; 
+  }
+
+  .register-form button {
+    width: 80%; 
+    padding: 0.4rem; 
+    margin-top: 0.7rem; 
+    margin-bottom: 0.7rem; 
+    font-size: 12px; 
+  }
+
+  .register-form p {
+    margin-top: 0.7rem; 
+    font-size: 12px; 
+  }
+
+  
+}
+
