@@ -68,7 +68,9 @@ const Recommendation = ({recommendation , openEditModal , shelf}) => {
         <span className='review-text'>{recommendation.review}</span>
       </div>
       <div>
-        <button onClick={!shelf ? deleteRecommendedBook : removeFromshelf} className='add-to-shelve-button'>Remove</button>
+        {!shelf && <button onClick={deleteRecommendedBook } className='add-to-shelve-button'>Remove</button>}
+
+        {shelf && <button  onClick={removeFromshelf} className='add-to-shelve-button'>Remove</button>}
         {!shelf && <button onClick={openEditModal}className='add-to-shelve-button'>Edit</button>}
       </div>
     </div>

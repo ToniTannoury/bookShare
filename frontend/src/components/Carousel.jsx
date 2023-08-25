@@ -50,11 +50,11 @@ const Carousel = ({ recommendations , openEditModal ,feed , shelf}) => {
       style={{ display: 'flex', overflowX: 'scroll'  }}
     >
       <div style={{ display: 'flex' , gap:"40px"}}>
-        {!feed && recommendations?.map((rec) =><Recommendation shelf recommendation={rec}  openEditModal={() => openEditModal(rec)} /> )}
+        {!feed && recommendations?.map((rec) =><Recommendation shelf={shelf} recommendation={rec}  openEditModal={() => openEditModal(rec)} /> )}
         {feed && recommendations?.map((rec) =><OwnRecommendation recommendation={rec}  openEditModal={() => openEditModal(rec)} /> )}
       </div>
     </div>
   );
 };
-
+ 
 export default Carousel;
