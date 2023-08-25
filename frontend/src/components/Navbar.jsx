@@ -12,16 +12,16 @@ const Navbar = () => {
         <h2 className='app-name'>BookShare</h2>
       </div>
       <div className='right-nav'>
-      <h4><Link to={'/landing'}>
+      <h4><Link className='link' to={'/landing'}>
             Your Recommendations
           </Link></h4> 
         <div>
-          <h4><Link to={'/feed'}>
+          <h4><Link className='link' to={'/feed'}>
             Feed
           </Link></h4> 
         </div>
         <div >
-        <h4><Link to={'/shelf'}>
+        <h4><Link className='link' to={'/shelf'}>
             Shelf
           </Link></h4> 
         </div>

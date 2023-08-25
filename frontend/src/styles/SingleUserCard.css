@@ -39,4 +39,6 @@
 
 .username{
   text-align: center;
+  width: 200px;
+  margin-left: -30px;
 }

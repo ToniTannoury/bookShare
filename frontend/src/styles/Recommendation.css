@@ -15,10 +15,11 @@
 }
 .genre-box{
   height:26px;
-  width: 60px;
   text-align: center;
-  background-color: aqua;
   margin-right: 16px;
+  padding: 2px;
+  border: solid 2px #72b9fb;
+  border-radius: 10px;
 }
 .recommendation-image{
   width: 243px;
@@ -106,6 +107,8 @@ gap: 16px;
   max-width: 400px;
   width: 100%;
   box-shadow: 0px 0px 10px #3498db;
+  font-family: 'Apple Chancery',  cursive;
+
 }
 
 .modal-label {
@@ -126,6 +129,7 @@ gap: 16px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  
 }
 
 .modal-button {
@@ -136,6 +140,8 @@ gap: 16px;
   color: white;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 
 .modal-button:hover {

@@ -59,7 +59,7 @@ const [editedRecommendation, setEditedRecommendation] = useState();
     }));
   };
   const saveEditedRecommendation = async () => {
-    // Create a copy of the edited recommendation
+    
     const updatedRecommendation = { ...editedRecommendation };
   
     console.log(typeof updatedRecommendation.author.pic_url === "object")
@@ -68,14 +68,14 @@ const [editedRecommendation, setEditedRecommendation] = useState();
       console.log( updatedRecommendation.author.pic_url)
     }
   
-    // Check if a new book picture was inputted, if not, keep the old name
+    
     console.log(typeof  updatedRecommendation.book_pic_url)
     if (!updatedRecommendation.book_pic_url) {
       updatedRecommendation.book_pic_url = updatedRecommendation.book_pic_url.name;
       console.log( updatedRecommendation.book_pic_url.name)
     }
   
-    // Prepare the data for dispatch and sending to the server
+   
     const filteredEditedRecommendation = {
       author: {
         name: updatedRecommendation.author.name,
@@ -96,7 +96,7 @@ const [editedRecommendation, setEditedRecommendation] = useState();
     body.append('book_pic_url', updatedRecommendation.book_pic_url);
     body.append('genre', updatedRecommendation.genre);
   
-    // Send the PATCH request to update the recommendation
+    
     const response = await fetch(
       `http://localhost:5000/api/books/updateRecommendedBook/${updatedRecommendation._id}`,
       {
@@ -110,13 +110,13 @@ const [editedRecommendation, setEditedRecommendation] = useState();
   
     const data = await response.json();
   
-    // Dispatch the edited recommendation to update the state
+   
     dispatch({
       type: 'EDIT_RECOMMENDED_BOOK',
       payload: filteredEditedRecommendation,
     });
   
-    // Close the modal
+    
     closeEditModal();
   };
   
@@ -189,8 +189,8 @@ const [editedRecommendation, setEditedRecommendation] = useState();
           onChange={(e) => handleInputChange(e)}
         />
         <div className="modal-buttons">
-          <button className="modal-button" onClick={saveEditedRecommendation}>Save</button>
-          <button className="modal-button" onClick={closeEditModal}>Cancel</button>
+          <button className='add-to-shelve-button' style={{marginLeft:"-1px"}} onClick={saveEditedRecommendation}>Save</button>
+          <button className='add-to-shelve-button' onClick={closeEditModal}>Cancel</button>
         </div>
       </Modal>
     </div>

@@ -22,7 +22,7 @@ const Shelf = () => {
       {groupedRecommendations && Object.entries(groupedRecommendations).map(([genre, recommendations]) => (
   <div key={genre}>
     <div className='single-following-header'>
-      <img className='author-image' src={`http://localhost:5000/images/th.jpg`} alt={genre} />
+     
       <div className='single-following'>{genre} Recommendations</div>
     </div>
     

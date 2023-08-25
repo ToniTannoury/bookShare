@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import UserContext from '../context/userContext';
 import '../styles/SingleRecommendation.css';
+import { FaHeart  , FaComment  , FaBook} from 'react-icons/fa'; 
 
 const SingleRecommendation = ({ recommendation }) => {
   const [isLiked, setIsLiked] = useState(false);
@@ -26,10 +27,10 @@ const SingleRecommendation = ({ recommendation }) => {
       );
 
       if (response.ok) {
-        // Toggle the isLiked state immediately
+  
         setIsLiked(prevIsLiked => !prevIsLiked);
 
-        // Update the context state based on the new recommendation state
+    
         if (!isLiked) {
           dispatch({ type: 'ADD_LIKED_BOOK', payload: recommendation });
           dispatch({ type: 'INCREMENT_LIKES_FOR_FOLLOWING_RECOMMENDATION', payload: {
@@ -53,16 +54,27 @@ const SingleRecommendation = ({ recommendation }) => {
   };
 
   return (
-    <div className='single-recommendation'>
+    <div className='single-recommendation' style={{height:"150px"}}>
       <img
+      style={{width:"90px" , height:"100px"}}
         className='recomm-search-image'
         src={`http://localhost:5000/images/${recommendation.book_pic_url}`}
         alt=""
       />
-      {recommendation.bookName}
-      <button className='add-to-likes' onClick={handleLikeClick}>
+      <div style={{width:"250px" }}>
+        {console.log(recommendation)}
+      <FaBook className='blue'/> {recommendation.bookName}
+      <br />
+      <FaHeart className='blue'/> {recommendation.likes} likes
+      <br />
+      <FaComment className='blue'/> {recommendation.review}
+      </div>
+      <div style={{width:"200px" , textAlign:'end'}}>
+      <button className='add-to-shelve-button' onClick={handleLikeClick}>
         {isLiked ? 'Liked' : 'Like and add to shelve'}
       </button>
+      </div>
+      
     </div>
   );
 };

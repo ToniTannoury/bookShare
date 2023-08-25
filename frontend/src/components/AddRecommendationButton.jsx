@@ -159,8 +159,8 @@ const [addedRecommendation, setAddRecommendation] = useState();
           onChange={(e) => handleInputChange(e)}
         />
         <div className="modal-buttons">
-          <button className="modal-button" onClick={saveaddedRecommendation}>Save</button>
-          <button className="modal-button" onClick={closeEditModal}>Cancel</button>
+          <button className='add-to-shelve-button' style={{marginLeft:"-1px"}} onClick={saveaddedRecommendation}>Save</button>
+          <button className='add-to-shelve-button' onClick={closeEditModal}>Cancel</button>
         </div>
       </Modal>
     </div>
