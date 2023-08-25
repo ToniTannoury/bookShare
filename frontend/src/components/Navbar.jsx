@@ -3,8 +3,9 @@ import "../styles/Navbar.css"
 import { useNavigate , Link } from 'react-router-dom'
 const Navbar = () => {
   const navigate = useNavigate()
-  const goto = (path)=>{
-    navigate(path)
+  const handleLogout = ()=>{
+    localStorage.clear();
+    navigate('/login')
   }
   return (
     <div className='nav-bar'>
@@ -26,7 +27,7 @@ const Navbar = () => {
           </Link></h4> 
         </div>
        
-        <button className='logout-button'>logout</button>
+        <button onClick={handleLogout} className='logout-button'>logout</button>
       </div>
       
     </div>
